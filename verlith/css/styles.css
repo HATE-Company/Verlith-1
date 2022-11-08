@@ -1,0 +1,238 @@
+/* ------------ GOOGLE FONTS ------------ */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+/* ------------ VARIABLES ------------ */
+:root{
+  /* FONT */
+  --font: 'Montserrat';
+
+
+  /* COLORS */
+  --color: #001220;
+  --bg-color: #FCAF3C;
+}
+
+/* ------------ BASE ------------ */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Montserrat';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  
+  background-image: url(/verlith/img/background.svg);
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* ----------- SLIDER ------------ */
+.swiper{
+  width: 100%;
+}
+
+.swiper-wrapper{
+  width: 100%;
+  height: 35em;
+  display: flex;
+  align-items: center;
+}
+
+.card{
+  width: 20em;
+  height: 90%;
+  border-radius: 1em;
+  padding: 2em 1em;
+  background-color: #ff00dd28;
+  box-shadow: 0 0 .5em #ea00ff;
+  
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  margin: 0 2em;
+
+  position: relative;
+  border-radius:15px;
+  margin:30px;
+  justify-content: center;
+  border-top:1px solid rgba(255,255,255,0.5);
+  border-left:1px solid rgba(255,255,255,0.5);
+  border-bottom:1px solid rgba(255,255,255,0.5);
+  border-right:1px solid rgba(255,255,255,0.5);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  transform-style: preserve-3d;
+  transform: perspective(800px)
+}
+
+.swiper-slide:not(.swiper-slide-active){
+  filter: brightness(80%) blur(.5px);
+  -webkit-filter: brightness(80%) blur(.5px);
+  background-color: #ffe1cc00;
+}
+
+.card__image{
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  border: 3px solid ;  
+  border-top:1px solid rgba(255,255,255,0.5);
+  border-left:1px solid rgba(255,255,255,0.5);
+  border-bottom:1px solid #ea00ff;
+  border-right:1px solid rgba(255,255,255,0.5);
+  box-shadow: 0 0.5em #001220;
+  padding: 3px;
+  margin-bottom: 2em;
+}
+
+.card__image img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card__content{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #ffe1cc;
+}
+
+.card__title{
+  font-size: larger;
+  position: relative;
+  top: .2em;
+}
+
+.card__name{
+  color: #EC9355;
+  font-size: larger;
+}
+
+
+.card__text{
+  text-align: center;;
+  margin: 2em 2em;
+}
+
+.card__btn{
+  background-color: var(--color);
+  color: #ffe1cc;
+  text-transform: uppercase;
+  font-size: large;
+  font-family: 'Montserrat';
+  border: none;
+  padding: .5em;
+  border-radius: .5em;
+  margin-top: .5em;
+  cursor: pointer;
+}
+.btn__collapser--black {
+  background: black
+}
+.btn__collapser--special{
+  position: relative;
+  width: 155px;
+  height: 50px;
+  margin: 7px 0px 5px 0px;
+
+}
+.btn__collapser--special button{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255,255,255,0.05);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+  border-top: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  border-radius: 30px;
+  border-left: none;
+  border-right: none;
+  color: beige;
+  z-index: 1;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.5s;
+  backdrop-filter: blur(15px);
+}
+.btn__collapser--special:hover button{
+  letter-spacing: 3px;
+}
+.btn__collapser--special button::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(255,255,255,0.15), transparent);
+  transform: skewX(45dg) translateX(0);
+  transition: 0.5s;
+}
+.btn__collapser--special:hover button:before{
+  transform: skewX(45deg) translateX(200%);
+}
+.btn__collapser--special::before{
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -5px;
+  width: 30px;
+  height: 10px;
+  background: #f00;
+  border-radius: 10px;
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+.btn__collapser--special:hover::before{
+  bottom: 0;
+  height: 50%;
+  width: 80%;
+  border-radius: 30px;
+  transition-delay: 0.5s;
+}
+.btn__collapser--special::after{
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -5px;
+  width: 30px;
+  height: 10px;
+  background: #f00;
+  border-radius: 10px;
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+.btn__collapser--special:hover::after{
+  top: 0;
+  height: 50%;
+  width: 80%;
+  border-radius: 30px;
+  transition-delay: 0.5s;
+}
+
+.btn__collapser--special::before,
+.btn__collapser--special::after {
+  background: #da1eff;
+  box-shadow: 0 0 5px #da1eff, 0 0 15px #da1eff, 0 0 30px #da1eff,
+  0 0 60px #da1eff;
+}
