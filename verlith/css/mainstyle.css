@@ -18,7 +18,7 @@
 
     width: 100%;
     height: 80px;
-    display: block;
+
     background-color: #001220;
 }
 .inner.header{
@@ -49,19 +49,14 @@
 }
 .navigation{
     float: right;
-    height: 95%;
-    position: absolute;
-    right: 0
-    
-    
-;
+    height: 100%;
 }
 .navigation a{
     height: 100%;
     display: table;
     float: left;
-    padding: 0px 20px;
-  
+    padding: 6px 20px;  
+    
 }
 .navigation a li{
     display: table-cell;
@@ -85,6 +80,7 @@
     background-color: #EC9355;
     height: 95%;
     transition-duration: 200ms;
+    
 }
 .navigation a li:hover{
     color: #001220 ;
@@ -153,7 +149,7 @@
     
 }
 .secondheader{
-    width: 96%;
+    width: 100%;
     height: 100%;
     display: block;
     margin: 0 auto;
@@ -275,7 +271,7 @@
     float: right;
     align-items: right;
     margin-top: -90px;
-    margin-right: -30px;
+    margin-right: -5px;
     display: table;
     flex-wrap: wrap;
     justify-content: space-around;
