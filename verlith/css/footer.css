@@ -33,7 +33,7 @@ ul{
 	font-size: 18px;
 	color: #ffe1cc;
 	text-transform: capitalize;
-	margin-bottom: 35px;
+	margin-bottom: 5px;
 	font-weight: 500;
 }
 .footer-col h4::before{
@@ -43,6 +43,10 @@ ul{
 	height: 2px;
 	box-sizing: border-box;
 	width: 50px;
+	
+}
+.footer-col ul{
+	margin-top: 30px;
 }
 .footer-col ul li:not(:last-child){
 	margin-bottom: 10px;
@@ -57,10 +61,15 @@ ul{
 	color: #bbbb;
 	display: block;
 	transition: all 0.3s ease;
+	height: 20px;
+	
 }
 .footer-col ul li a:hover{
 	color: #ffe1cc;
 	padding-left: 3px;
+}
+.footer-col .social-links{
+	margin-top: 30px;
 }
 .footer-col .social-links a{
 	display: inline-block;
@@ -73,6 +82,7 @@ ul{
 	border-radius: 100%;
 	color: #bbbb;
 	transition: all 0.5s ease;
+	
 }
 .footer-col .social-links a:hover{
 	color: #001220;
