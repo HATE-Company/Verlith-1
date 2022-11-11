@@ -6,6 +6,9 @@
     list-style: none;
     text-decoration: none;
 }
+.active{
+    display: block;
+}
 .background{
     background-image: url("");
     height: 100vh;

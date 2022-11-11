@@ -1,5 +1,10 @@
 console.log('Hello, World')
 
+function toggle() {
+  var hamburgerMenu = document.getElementById("mobile");
+  hamburgerMenu.classList.toggle('active')
+}
+
 var swiper = new Swiper(".mySwiper1", {
     effect: "coverflow",
     loop: true,
