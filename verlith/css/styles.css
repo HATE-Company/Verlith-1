@@ -45,6 +45,7 @@ body{
   align-items: center;
 }
 
+
 .card{
   width: 20em;
   height: 90%;
@@ -76,6 +77,11 @@ body{
 .swiper-slide:not(.swiper-slide-active){
   filter: brightness(80%) blur(.5px);
   -webkit-filter: brightness(80%) blur(.5px);
+  background-color: #ffe1cc00;
+}
+.secondsection .swiper-slide:not(.swiper-slide-active){
+  filter: brightness(80%) blur(.5px);
+  -webkit-filter: brightness(80%) blur(1.8px);
   background-color: #ffe1cc00;
 }
 
