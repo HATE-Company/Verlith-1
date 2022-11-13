@@ -1,18 +1,20 @@
-import logo from './logo.svg';
-import './App.scss';
+import "./App.scss";
 
 function App() {
   return (
     <div className="App">
-     <section id='first'>
-      <h1>First Section</h1>
-      <a href='#second'>Navigate Second Seciton</a>
-     </section>
-     <section id='second'>
-      <h1>Second Section</h1>
-      <a href='#first'>Navigate First Seciton</a>
+      <section id="first">
+        <div className="header">
+          <div className="header__logo">Amazing Logo Wow</div>
+          <div className="header__menu">
+            <div />
+          </div>
+        </div>
 
-     </section>
+        <div className="background">
+          <img alt="" src={require("./assets/jesus1.png")} />
+        </div>
+      </section>
     </div>
   );
 }
