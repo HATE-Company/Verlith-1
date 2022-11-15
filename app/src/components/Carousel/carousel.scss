@@ -1,0 +1,22 @@
+
+  
+.swp{
+    width: 100%;
+}
+.swiper-slide {
+    width: auto!important;
+    zoom: 1;
+}
+.swiper-slide{
+    pointer-events: none;
+    &:hover .rgb::after{
+        display: block!important;
+    }
+  
+  }
+
+  .swiper-slide:not(.swiper-slide-active){
+    filter: brightness(70%) blur(.5px)!important;
+    -webkit-filter: brightness(70%) blur(.5px)!important;
+    background-color: #ffe1cc00!important;
+}

@@ -1,0 +1,19 @@
+@use '../../mainstyles/variables.scss' as *;
+
+.navitem{
+    color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+    color: #ffe1cc;
+    font-family: 'Montserrat';
+    font-size: 10px;
+    transition: all 0.2s ease;
+    &:hover{
+        bottom: 0.2rem;
+        background-color: $logo-color;
+        color: $header-color;
+    }
+}
