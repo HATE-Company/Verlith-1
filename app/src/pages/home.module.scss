@@ -29,7 +29,7 @@ section{
         top: 80px;
         position: relative;
         position: absolute;
-        background-color: red;
+   
         display: flex;
         z-index: -1;
         &__second{
@@ -38,7 +38,7 @@ section{
            
             position: relative;
             position: absolute;
-            background-color: red;
+
             display: flex;
             z-index: -1;
         & .bg__second{

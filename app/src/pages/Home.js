@@ -15,7 +15,7 @@ const Home = () => {
         </div>
         <div className={styles.home__content}>
           <div className={styles.home__content__carousel}>
-            <Carousel></Carousel>
+            <Carousel nft></Carousel>
           </div>
           <div>
             <MainBtn color="green" title="Team"></MainBtn>
@@ -29,6 +29,11 @@ const Home = () => {
             className={styles.bg__second}
             src={require("../assets/jesus1.png")}
           />
+        </div>
+        <div className={styles.home__content}>
+          <div className={styles.home__content__carousel}>
+            <Carousel></Carousel>
+          </div>
         </div>
       </section>
       <Footer></Footer>

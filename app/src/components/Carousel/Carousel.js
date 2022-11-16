@@ -10,9 +10,11 @@ import SilverMonolith from "../../assets/Card_HC_SilverFront.jpg"
 import BronzeMonolith from "../../assets/Card_HC_BronzeFront.jpg"
 import BlackMonolith from "../../assets/Card_HC_BlackFront.jpg"
 import BonusMonolith from "../../assets/Card_HC_BlackBonusFront.jpg"
+import Profile from "../../assets/images.png"
+
 import { Controller, EffectCoverflow, FreeMode, Grid, Keyboard, Manipulation, Mousewheel, Navigation, Pagination, Parallax, Virtual } from "swiper";
 import CarouselItem from "../CarouselItem/CarouselItem";
-const Carousel = () => {
+const Carousel = ({nft}) => {
   const params = {
     modules:[Navigation, EffectCoverflow, Pagination, Keyboard],
     effect: "coverflow",
@@ -36,7 +38,33 @@ const Carousel = () => {
       },
      
   }
+  const params2 = {
+    modules:[Navigation, EffectCoverflow, Pagination, Keyboard],
+    effect: "coverflow",
+    loop: true,
+    pagination:true,
+    grabCursor: true,
+    centeredSlides: true,
+    spaceBetween: 100,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 10,
+      depth: 100,
+      modifier: 1,
+      slideShadows: false,
+    },
+    navigation:true,
+      keyboard: {
+        enabled: true,
+      }
+    
+  
+ 
+}
     return (
+      <>
+{nft? 
       <Swiper {...params}>
         <SwiperSlide>
         <CarouselItem img={GoldMonolith} title='HEADLINE CREATOR' price='$49' desc='begin your journey without any limits and become a pianoeer of the deserve to earn concept'  btnText={'Buy Now'}/>
@@ -58,6 +86,32 @@ const Carousel = () => {
         <CarouselItem img={BonusMonolith} title='HASHTAG CREATOR' price='$99' desc='create your own community to monetize your content as a group and expand your dedicated hashtag' btnText='COMING SOON'/>
         </SwiperSlide>
       </Swiper>
+      :
+      <Swiper {...params2}>
+
+      <SwiperSlide>
+        <CarouselItem type='participant' img={Profile} title="Participant's Role" price='Your Name Here' desc='This line contains some info about participant. Here is some random filler text content' btnText='Linkedin GitHub etc.'/>
+      </SwiperSlide>   
+
+      <SwiperSlide>
+        <CarouselItem type='participant' img={Profile} title="Participant's Role" price='Your Name Here' desc='This line contains some info about participant. Here is some random filler text content' btnText='Linkedin GitHub etc.'/>
+      </SwiperSlide> 
+
+      <SwiperSlide>
+        <CarouselItem type='participant' img={Profile} title="Participant's Role" price='Your Name Here' desc='This line contains some info about participant. Here is some random filler text content' btnText='Linkedin GitHub etc.'/>
+      </SwiperSlide>  
+
+      <SwiperSlide>
+        <CarouselItem type='participant' img={Profile} title="Participant's Role" price='Your Name Here' desc='This line contains some info about participant. Here is some random filler text content' btnText='Linkedin GitHub etc.'/>
+      </SwiperSlide>  
+
+      <SwiperSlide>
+        <CarouselItem type='participant' img={Profile} title="Participant's Role" price='Your Name Here' desc='This line contains some info about participant. Here is some random filler text content' btnText='Linkedin GitHub etc.'/>
+      </SwiperSlide>    
+
+      </Swiper>
+      }
+      </>
       );
 
 }
