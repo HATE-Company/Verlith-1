@@ -1,0 +1,63 @@
+@use "../../mainstyles/variables.scss" as *;
+
+.footerColumn{
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    height: 90%;
+    font-family: "Montserrat";
+    &__title{
+        display: flex;
+        flex-direction: column;
+        color: #ffe1cc;
+        font-size: 18px;
+        margin-bottom: 1.5rem;
+        & h4{
+            margin-bottom: 3px;
+        }
+        &__style{
+            width: 3rem;
+            height: 2px;
+            background-color: $logo-color;
+        }
+    }
+    &__links{
+        display: flex;
+        flex-direction:column;
+        font-size: 16px;
+        &__icons{
+            display: flex;
+        }
+        &__icon{
+            margin-right: 1rem;
+            width: 25px;
+            display: flex;
+            height: max-content;
+            align-items: center;
+            justify-content: center;
+            padding: 0.3rem;
+            border-radius: 50px;
+            &:nth-child(1){
+                
+            }
+            &:hover{
+                background-color: $logo-color;
+            }
+        }
+        & a {
+            color: #bbbb;
+            text-decoration: none;
+            position: relative;
+            left: 0;
+            transition: all 0.5s ease;
+            margin-bottom: 10px;
+        }
+        & a:hover{
+            color: #ffe1cc;
+            position: relative;
+            left: 0.5rem;
+        }
+
+    }   
+
+}

@@ -4,14 +4,24 @@ section{
     height: 100vh;
     display: flex;
     flex-direction: column;
+  
 }
 
 .home{
+    display: flex;
+    flex-direction: column;
    &__content{
     display: flex;
     align-items: center;
     height: calc(100vh - 80px);
     justify-content: center;
+    flex-direction: column;
+    &__carousel{
+        display: flex;
+        width: 100%;
+        height: max-content;
+    }
+
    }
     &__bg{
         height: calc(100% - 80px) ;
@@ -22,6 +32,23 @@ section{
         background-color: red;
         display: flex;
         z-index: -1;
+        &__second{
+            height: 100% ;
+            width: 100%;
+           
+            position: relative;
+            position: absolute;
+            background-color: red;
+            display: flex;
+            z-index: -1;
+        & .bg__second{
+            position: relative;
+            flex-shrink: 0;
+            min-width: 100%;
+            min-height: 100%;
+        }
+
+        }
         & .bg{
             position: relative;
             flex-shrink: 0;

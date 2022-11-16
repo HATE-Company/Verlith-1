@@ -22,6 +22,7 @@ const Carousel = () => {
     spaceBetween: 100,
     centeredSlides: true,
     slidesPerView: 'auto',
+    initialSlide:2,
     coverflowEffect: {
       rotate: 20,
       stretch: 10,
