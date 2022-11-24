@@ -156,7 +156,9 @@
     display: block;
     margin: 0 auto;
 }
-
+.starbtn{
+    visibility: hidden;
+}
 .startapp{
     width: 95.5%;
     margin-left: .5px;
@@ -165,6 +167,7 @@
     display: table;
     flex-wrap: wrap;
     justify-content: space-around;
+    top: 80px;
 }
 .startapp .btn{
     position: relative;
